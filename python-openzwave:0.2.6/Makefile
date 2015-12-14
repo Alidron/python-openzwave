@@ -1,4 +1,4 @@
-image_name = alidron/python-openzwave:0.2.6-test
+image_name = alidron/python-openzwave:0.2.6
 
 .PHONY: clean clean-dangling build run-bash
 

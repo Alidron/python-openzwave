@@ -22,3 +22,5 @@ RUN wget http://bibi21000.no-ip.biz/python-openzwave/python-openzwave-0.2.6.tgz 
  && python setup-lib.py build \
  && python setup-api.py build \
  && ./install.sh
+ 
+ENV PYOZW_VERSION=0.2.6
