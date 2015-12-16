@@ -28,6 +28,8 @@ mv open-zwave-master openzwave
 
 make build
 make install
+mkdir -p /usr/share/openzwave
+cp openzwave/config /usr/share/openzwave
 
 find /usr/local \( -type d -a -name test -o -name tests \) -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) -exec rm -rf '{}' +
 apt-get purge -y --auto-remove $buildDeps
