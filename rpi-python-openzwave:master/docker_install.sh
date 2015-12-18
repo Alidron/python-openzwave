@@ -31,7 +31,7 @@ wget
 apt-get update
 apt-get install -y --no-install-recommends $buildDeps
 
-pip install --no-cache-dir louie cython==0.21.1
+pip install louie cython==0.21.1
 
 cd /tmp
 wget https://github.com/OpenZWave/python-openzwave/archive/master.zip
