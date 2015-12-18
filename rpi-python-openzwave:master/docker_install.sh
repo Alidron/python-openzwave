@@ -34,12 +34,12 @@ apt-get install -y --no-install-recommends $buildDeps
 pip install louie cython==0.21.1
 
 cd /tmp
-wget https://github.com/OpenZWave/python-openzwave/archive/master.zip
+wget --no-check-certificate https://github.com/OpenZWave/python-openzwave/archive/master.zip
 unzip master.zip
 cd /tmp/python-openzwave-master
 mkdir .git # Necessary if you don't want to see a weird error about .pyx files when doing make install...
 
-wget https://github.com/OpenZWave/open-zwave/archive/master.zip
+wget --no-check-certificate https://github.com/OpenZWave/open-zwave/archive/master.zip
 unzip master.zip
 mv open-zwave-master openzwave
 
