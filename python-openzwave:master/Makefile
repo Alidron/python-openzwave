@@ -16,7 +16,7 @@
 # along with Alidron.  If not, see <http://www.gnu.org/licenses/>.
 
 image_name = alidron/python-openzwave:master
-registry = registry.tinigifi.org:5000
+registry = registry.tinigrifi.org:5000
 
 .PHONY: clean clean-dangling build push pull run-bash
 
