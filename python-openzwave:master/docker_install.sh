@@ -24,6 +24,7 @@ g++
 gcc
 libudev-dev
 make
+sudo
 unzip
 wget
 '
