@@ -8,8 +8,8 @@ This repository contains dockerfiles to build Alidron flavoured version of pytho
 The dockerfiles inherit alidron-isac image. The built process il also customized to minimize the size of the resulting image.
 
 The Docker images are accessibles on:
-* x86: [alidron/python-openzwave](https://hub.docker.com/r/alidron/python-openzwave/)
-* ARM/Raspberry Pi: [alidron/rpi-python-openzwave](https://hub.docker.com/r/alidron/rpi-python-openzwave/)
+* x86: [alidron/python-openzwave:master](https://hub.docker.com/r/alidron/python-openzwave/)
+* ARM/Raspberry Pi: [alidron/rpi-python-openzwave:master](https://hub.docker.com/r/alidron/rpi-python-openzwave/)
 
 Dockerfiles are accessible from the Github repository:
 * x86: [Dockerfile](https://github.com/Alidron/python-openzwave/blob/master/python-openzwave:master/Dockerfile)
