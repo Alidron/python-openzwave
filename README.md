@@ -11,6 +11,10 @@ The Docker images are accessibles on:
 * x86: [alidron/python-openzwave](https://hub.docker.com/r/alidron/python-openzwave/)
 * ARM/Raspberry Pi: [alidron/rpi-python-openzwave](https://hub.docker.com/r/alidron/rpi-python-openzwave/)
 
+Dockerfiles are accessible from the Github repository:
+* x86: [Dockerfile](https://github.com/Alidron/python-openzwave/blob/master/python-openzwave:master/Dockerfile)
+* ARM/Raspberry Pi: [Dockerfile](https://github.com/Alidron/python-openzwave/tree/master/rpi-python-openzwave:master/Dockerfile)
+
 
 License and contribution policy
 ===============================
