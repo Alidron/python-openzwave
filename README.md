@@ -1,11 +1,9 @@
 Python-openzwave for Alidron
 ============================
 
-[![build status](https://git.tinigrifi.org/ci/projects/5/status.png?ref=master)](https://git.tinigrifi.org/ci/projects/5?ref=master)
+[![build status](https://git.tinigrifi.org/ci/projects/5/status.png?ref=master)](https://git.tinigrifi.org/ci/projects/5?ref=master) [![Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/Alidron/talk)
 
 This repository contains dockerfiles to build Alidron flavoured version of python-openzwave.
-
-**>>** Discuss on the [Gitter channel](https://gitter.im/Alidron/talk).
 
 The dockerfiles inherit alidron-isac image. The built process il also customized to minimize the size of the resulting image.
 
