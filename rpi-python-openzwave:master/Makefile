@@ -16,9 +16,9 @@
 # along with Alidron.  If not, see <http://www.gnu.org/licenses/>.
 
 image_name = alidron/rpi-python-openzwave:master
-registry = neuron.local:6667
+private_registry = neuron.local:6667
 
-.PHONY: clean clean-dangling build push pull run-bash
+.PHONY: clean clean-dangling build push pull push-priv pull-priv run-bash
 
 clean:
 	docker rmi $(image_name) || true
@@ -30,12 +30,18 @@ build: clean-dangling
 	docker build --force-rm=true -t $(image_name) .
 
 push:
-	docker tag -f $(image_name) $(registry)/$(image_name)
-	docker push $(registry)/$(image_name)
+	docker push $(image_name)
 
 pull:
-	docker pull $(registry)/$(image_name)
-	docker tag $(registry)/$(image_name) $(image_name)
+	docker pull $(image_name)
+
+push-priv:
+	docker tag -f $(image_name) $(private_registry)/$(image_name)
+	docker push $(private_registry)/$(image_name)
+
+pull-priv:
+	docker pull $(private_registry)/$(image_name)
+	docker tag $(private_registry)/$(image_name) $(image_name)
 
 run-bash:
 	docker run -it --rm $(image_name) bash

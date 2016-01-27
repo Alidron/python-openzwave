@@ -16,7 +16,6 @@
 # along with Alidron.  If not, see <http://www.gnu.org/licenses/>.
 
 image_name = alidron/python-openzwave:master
-registry = registry.tinigrifi.org:5000
 
 .PHONY: clean clean-dangling build push pull run-bash
 
@@ -30,12 +29,10 @@ build: clean-dangling
 	docker build --force-rm=true -t $(image_name) .
 
 push:
-	docker tag -f $(image_name) $(registry)/$(image_name)
-	docker push $(registry)/$(image_name)
+	docker push $(image_name)
 
 pull:
-	docker pull $(registry)/$(image_name)
-	docker tag $(registry)/$(image_name) $(image_name)
+	docker pull $(image_name)
 
 run-bash:
 	docker run -it --rm $(image_name) bash

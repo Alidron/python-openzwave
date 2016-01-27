@@ -34,3 +34,11 @@ deploy-master-rpi:
         - cd rpi-python-openzwave:master
         - make push
         
+deploy-priv-master-rpi:
+    stage: deploy
+    tags:
+        - rpi
+    script:
+        - cd rpi-python-openzwave:master
+        - make push-priv
+        
