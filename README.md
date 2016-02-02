@@ -24,7 +24,7 @@ License and contribution policy
 
 Python-openzwave itself is licensed under GPLv3.
 
-This project (mainly the build files and resulting docker images) is licensed under LGPLv3.
+This project (mainly the build files and resulting docker images) is licensed under MPLv2.
 
 To contribute, please, follow the [C4.1](http://rfc.zeromq.org/spec:22) contribution policy.
 
